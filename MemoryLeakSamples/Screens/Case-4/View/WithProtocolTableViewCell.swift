@@ -18,7 +18,7 @@ class WithProtocolTableViewCell: UITableViewCell {
     private let button : UIButton = {
         var button = UIButton()
         button.setTitle("Button", for: .normal)
-       // button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.gray, for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         return button
     }()
