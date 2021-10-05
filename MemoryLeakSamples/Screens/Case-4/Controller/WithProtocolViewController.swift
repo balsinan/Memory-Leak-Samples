@@ -11,7 +11,7 @@ class WithProtocolViewController: UIViewController {
 
     private let tableView : UITableView = {
         let table = UITableView()
-        table.register(Case4TableViewCell.self, forCellReuseIdentifier: Case4TableViewCell.identifier)
+        table.register(WithProtocolTableViewCell.self, forCellReuseIdentifier: WithProtocolTableViewCell.identifier)
         return table
     }()
 
@@ -32,7 +32,7 @@ extension WithProtocolViewController : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Case4TableViewCell.identifier, for: indexPath) as! Case4TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: WithProtocolTableViewCell.identifier, for: indexPath) as! WithProtocolTableViewCell
         cell.delegate = self
         return cell
     }

@@ -23,7 +23,7 @@ class RetainCycleViewController: UIViewController {
     }
     
     deinit {
-        print("Case2ViewController deinit")
+        print("RetainCycleViewController deinit")
     }
 
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Case1ViewController: UIViewController {
+class WithClosureViewController: UIViewController {
 
     let customView = CustomView()
     
@@ -21,7 +21,7 @@ class Case1ViewController: UIViewController {
         customView.frame = CGRect(x: 100, y: 200, width: (self.view.frame.width-200), height: (self.view.frame.height-400))
         view.addSubview(customView)
         // to fix -> add [weak self] or [unowned self] in the capture list.
-        customView.tapHandler = { 
+        customView.tapHandler = {
             self.navigationController?.popViewController(animated: true)
         }
         

@@ -11,7 +11,7 @@ class WithClosure2ViewController: UIViewController {
     
     private let tableView : UITableView = {
         let table = UITableView()
-        table.register(Case3TableViewCell.self, forCellReuseIdentifier: Case3TableViewCell.identifier)
+        table.register(WithClosure2TableViewCell.self, forCellReuseIdentifier: WithClosure2TableViewCell.identifier)
         return table
     }()
 
@@ -32,7 +32,7 @@ extension WithClosure2ViewController : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Case3TableViewCell.identifier, for: indexPath) as! Case3TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: WithClosure2TableViewCell.identifier, for: indexPath) as! WithClosure2TableViewCell
         // to fix -> add [weak self] or [unowned self] in the capture list.
         cell.buttonTapHandler = {
             self.navigationController?.popViewController(animated: true)

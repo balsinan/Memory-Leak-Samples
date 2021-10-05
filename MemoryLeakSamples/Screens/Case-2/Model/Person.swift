@@ -8,8 +8,9 @@
 import Foundation
 
 class Person{
+    // to fix -> add weak to car object
     var name: String
-    weak var car: Car?
+    var car: Car?
     
     init(name: String) {
         self.name = name
