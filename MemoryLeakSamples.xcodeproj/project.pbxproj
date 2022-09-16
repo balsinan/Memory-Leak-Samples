@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F703E38328D45EDD00CF20FF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703E38228D45EDD00CF20FF /* ViewModel.swift */; };
 		F73D2790270499C6000066FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D278F270499C6000066FC /* AppDelegate.swift */; };
 		F73D2799270499C7000066FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73D2798270499C7000066FC /* Assets.xcassets */; };
 		F73D279C270499C7000066FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73D279A270499C7000066FC /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F703E38228D45EDD00CF20FF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F73D278C270499C6000066FC /* MemoryLeakSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryLeakSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D278F270499C6000066FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73D2798270499C7000066FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F703E38728D4606100CF20FF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F73D27A827049A6A000066FC /* MainViewController.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F703E38828D4607000CF20FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F703E38228D45EDD00CF20FF /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F73D2783270499C6000066FC = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				F73D27A427049A28000066FC /* Main */,
-				F73D27AF2704A1B7000066FC /* Case-1 */,
-				F73D27BB2704A788000066FC /* Case-2 */,
-				F73D27C62704A92B000066FC /* Case-3 */,
-				F73D27CF2704B31F000066FC /* Case-4 */,
-				F73D27D82704BB6D000066FC /* Case-5 */,
+				F73D27AF2704A1B7000066FC /* WithClosure */,
+				F73D27BB2704A788000066FC /* WithRetainCycle */,
+				F73D27C62704A92B000066FC /* WithClosure-2 */,
+				F73D27CF2704B31F000066FC /* WithProtocol */,
+				F73D27D82704BB6D000066FC /* WithNotificationCenter */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -111,7 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				F73D27AC27049F64000066FC /* View */,
+				F703E38828D4607000CF20FF /* ViewModel */,
 				F73D27A527049A31000066FC /* Controller */,
+				F703E38728D4606100CF20FF /* Storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -120,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				F73D27A727049A6A000066FC /* MainViewController.swift */,
-				F73D27A827049A6A000066FC /* MainViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,13 +161,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F73D27AF2704A1B7000066FC /* Case-1 */ = {
+		F73D27AF2704A1B7000066FC /* WithClosure */ = {
 			isa = PBXGroup;
 			children = (
 				F73D27B12704A24A000066FC /* View */,
 				F73D27B62704A3D8000066FC /* Controller */,
 			);
-			path = "Case-1";
+			path = WithClosure;
 			sourceTree = "<group>";
 		};
 		F73D27B12704A24A000066FC /* View */ = {
@@ -168,13 +187,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F73D27BB2704A788000066FC /* Case-2 */ = {
+		F73D27BB2704A788000066FC /* WithRetainCycle */ = {
 			isa = PBXGroup;
 			children = (
 				F73D27BC2704A7B1000066FC /* Model */,
 				F73D27C12704A842000066FC /* Controller */,
 			);
-			path = "Case-2";
+			path = WithRetainCycle;
 			sourceTree = "<group>";
 		};
 		F73D27BC2704A7B1000066FC /* Model */ = {
@@ -195,13 +214,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F73D27C62704A92B000066FC /* Case-3 */ = {
+		F73D27C62704A92B000066FC /* WithClosure-2 */ = {
 			isa = PBXGroup;
 			children = (
 				F73D27C82704A947000066FC /* View */,
 				F73D27C72704A941000066FC /* Controller */,
 			);
-			path = "Case-3";
+			path = "WithClosure-2";
 			sourceTree = "<group>";
 		};
 		F73D27C72704A941000066FC /* Controller */ = {
@@ -221,13 +240,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F73D27CF2704B31F000066FC /* Case-4 */ = {
+		F73D27CF2704B31F000066FC /* WithProtocol */ = {
 			isa = PBXGroup;
 			children = (
 				F73D27D52704B343000066FC /* View */,
 				F73D27D02704B329000066FC /* Controller */,
 			);
-			path = "Case-4";
+			path = WithProtocol;
 			sourceTree = "<group>";
 		};
 		F73D27D02704B329000066FC /* Controller */ = {
@@ -247,12 +266,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F73D27D82704BB6D000066FC /* Case-5 */ = {
+		F73D27D82704BB6D000066FC /* WithNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
 				F73D27D92704BB76000066FC /* Controller */,
 			);
-			path = "Case-5";
+			path = WithNotificationCenter;
 			sourceTree = "<group>";
 		};
 		F73D27D92704BB76000066FC /* Controller */ = {
@@ -346,6 +365,7 @@
 				F73D2790270499C6000066FC /* AppDelegate.swift in Sources */,
 				F73D27D32704B33D000066FC /* WithProtocolViewController.swift in Sources */,
 				F73D27B92704A3F6000066FC /* WithClosureViewController.swift in Sources */,
+				F703E38328D45EDD00CF20FF /* ViewModel.swift in Sources */,
 				F73D27B32704A25B000066FC /* CustomView.swift in Sources */,
 				F73D27DE2704BC6B000066FC /* WithNotfCenterViewController.swift in Sources */,
 				F73D27A927049A6A000066FC /* MainViewController.swift in Sources */,
