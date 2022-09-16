@@ -12,7 +12,6 @@
 		F73D2799270499C7000066FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73D2798270499C7000066FC /* Assets.xcassets */; };
 		F73D279C270499C7000066FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73D279A270499C7000066FC /* LaunchScreen.storyboard */; };
 		F73D27A927049A6A000066FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D27A727049A6A000066FC /* MainViewController.swift */; };
-		F73D27AA27049A6A000066FC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73D27A827049A6A000066FC /* MainViewController.xib */; };
 		F73D27AE27049F9D000066FC /* SamplesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D27AD27049F9D000066FC /* SamplesTableViewCell.swift */; };
 		F73D27B32704A25B000066FC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D27B22704A25B000066FC /* CustomView.swift */; };
 		F73D27B92704A3F6000066FC /* WithClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D27B72704A3F6000066FC /* WithClosureViewController.swift */; };
@@ -39,7 +38,6 @@
 		F73D279B270499C7000066FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73D279D270499C7000066FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F73D27A727049A6A000066FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F73D27A827049A6A000066FC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		F73D27AD27049F9D000066FC /* SamplesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesTableViewCell.swift; sourceTree = "<group>"; };
 		F73D27B22704A25B000066FC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F73D27B72704A3F6000066FC /* WithClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithClosureViewController.swift; sourceTree = "<group>"; };
@@ -69,14 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F703E38728D4606100CF20FF /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				F73D27A827049A6A000066FC /* MainViewController.xib */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		F703E38828D4607000CF20FF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +121,6 @@
 				F73D27AC27049F64000066FC /* View */,
 				F703E38828D4607000CF20FF /* ViewModel */,
 				F73D27A527049A31000066FC /* Controller */,
-				F703E38728D4606100CF20FF /* Storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -348,7 +337,6 @@
 				F73D279C270499C7000066FC /* LaunchScreen.storyboard in Resources */,
 				F73D2799270499C7000066FC /* Assets.xcassets in Resources */,
 				F73D27C52704A860000066FC /* RetainCycleViewController.xib in Resources */,
-				F73D27AA27049A6A000066FC /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
